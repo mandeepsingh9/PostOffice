@@ -3,7 +3,7 @@ import './App.css';
 import Input from './Container.jsx/Input';
 import toast, { Toaster } from 'react-hot-toast';
 import { useEffect, useState } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import Posts from './Container.jsx/Posts';
 import Store from './Stores/Store';
 import { MutatingDots } from 'react-loader-spinner';
@@ -26,10 +26,19 @@ function App() {
             }
           
             const res = await response.json();
+            
+            if(res[0].Status==='Error')
+             {
+              toast.error(res[0].Message)
+                return ;
+             }
+            console.log(res);  
             setdata(res);
             
         } catch (error) {
-            toast.error('Error fetching data:');
+            toast.error('Error fetching data:'); 
+            console.log(error);  
+            return;
         }
         finally{
           setLoading(false);

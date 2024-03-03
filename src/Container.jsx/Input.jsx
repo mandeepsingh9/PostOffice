@@ -13,9 +13,9 @@ const Input = () => {
         
      <div className='inputholder'>
 
-        <label className='lbl'>pincode</label>   
+        <label className='lbl'>Pincode</label>   
         <input type='number'placeholder='Enter your pincode' onChange={obj.handlepincode}/>
-
+ 
       </div>
          
        
