@@ -1,6 +1,8 @@
 import React from 'react'
 
 const Post = ({post}) => {
+
+  
   return (
     <div className='post'>
      <label><span>Name:</span> {post.Name}</label>

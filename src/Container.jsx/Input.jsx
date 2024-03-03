@@ -19,7 +19,7 @@ const Input = () => {
       </div>
          
        
-        <button>Submit</button>
+        <button className='butt'>Submit</button>
     </form>
 
     </>
