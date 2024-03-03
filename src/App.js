@@ -52,10 +52,10 @@ function App() {
    {
        e.preventDefault();
         
-       if(inputPin<6)
+       if(inputPin.length<6)
          {
            toast.error("Pin Must be greater than 6")
-          return;
+           return;
          }
        console.log(inputPin);
        setpincode(inputPin);
