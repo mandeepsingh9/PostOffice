@@ -1,0 +1,39 @@
+.posts{
+   display: flex;
+    
+  flex-wrap: wrap;
+   align-items: flex-start;
+   width: 100%;
+  
+   gap:20px;
+}
+
+.post{
+  display: flex;
+  flex-direction: column;
+  
+  border: 2px solid gray;
+  
+  width: 300px;
+   gap: 10px;
+  padding: 20px;
+}
+.post label span{
+  font-weight:bolder ;
+  margin-right:5px ;
+}
+
+.abc{
+  display: flex;
+  flex-direction: column;
+}
+.postscontainer div span{
+  font-weight:bolder ;
+  margin-right:5px ;
+}
+.postscontainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
